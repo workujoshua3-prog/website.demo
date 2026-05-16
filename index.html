@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WanderLuxe Travel</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #38bdf8;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #e2e8f0;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #38bdf8;
+  color: #0f172a;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+section {
+  padding: 100px 40px;
+}
+
+/* DESTINATIONS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  color: #38bdf8;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  color: #cbd5e1;
+}
+
+/* ABOUT */
+.about {
+  background: #0b1220;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: #94a3b8;
+}
+
+/* CONTACT */
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #64748b;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>WanderLuxe</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destination</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Explore The World With Style</h2>
+    <p>Luxury journeys. Unforgettable destinations. Unique experiences.</p>
+    <a style="background-color: #007bff; color: white; padding: 1
+    20px 30px; text-decoration: none; border-radius: 5px;font-size;20px;" href="#destinations">Start Your Journey</a>  
+  </div>
+</section>
+
+<section id="destinations">
+  <h2>Popular Destinations</h2>
+  <div class="cards">
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80" />
+  <h3>Paris</h3>
+  <p>The city of love and lights awaits your adventure.</p>
+  <!-- Add this link -->
+  <a href="Paris4.html" style="color: #38bdf8; padding: 15px; display: block; text-decoration: none; font-weight: bold;">View Details →</a>
+</div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" />
+      <h3>Bali</h3>
+      <p>Tropical paradise with serene beaches and culture.</p>
+      <!-- Add this link -->
+  <a href="bali.html" style="color: #38bdf8; padding: 15px; display: block; text-decoration: none; font-weight: bold;">View Details →</a>
+</div>
+
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" />
+      <h3>Tokyo</h3>
+      <p>A blend of tradition and futuristic innovation.</p>
+      <a href="tokyo.html" style="color: #38bdf8; padding: 15px; display: block; text-decoration: none; font-weight: bold;">View Details →</a>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    WanderLuxe is your gateway to premium travel experiences. We curate the
+    finest destinations around the world, ensuring comfort, adventure, and
+    unforgettable memories for every traveler.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message"></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 WanderLuxe. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
